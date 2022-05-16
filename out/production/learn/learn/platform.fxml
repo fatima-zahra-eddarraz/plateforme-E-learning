@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="learn.Proxy">
+    <children>
+        <AnchorPane prefHeight="492.0" prefWidth="790.0">
+            <children>
+                <AnchorPane layoutX="-1.0" prefHeight="492.0" prefWidth="784.0">
+                    <children>
+                        <AnchorPane layoutX="-1.0" prefHeight="492.0" prefWidth="784.0">
+                            <children>
+                                <HBox prefHeight="34.0" prefWidth="790.0" style="-fx-background-color: #6633cc;">
+                                    <children>
+                                        <ImageView fitHeight="34.0" fitWidth="55.0">
+                                            <image>
+                                                <Image url="@img/learn.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Label prefHeight="34.0" prefWidth="134.0" text="PlateForm">
+                                            <font>
+                                                <Font name="Times New Roman Bold" size="19.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <HBox.margin>
+                                                <Insets left="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <Button fx:id="logout" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#userLogOut" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: #6633cc; -fx-border-color: black;" text="log out" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman Bold" size="18.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="470.0" />
+                                            </HBox.margin>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </Button>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets left="10.0" />
+                                    </opaqueInsets>
+                                </HBox>
+                                <VBox layoutY="34.0" prefHeight="458.0" prefWidth="181.0" style="-fx-background-color: #6633ff;">
+                                    <children>
+                                        <Button fx:id="CourseNew" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#FormCours" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #6633ff; -fx-border-color: black;" text="Course">
+                                            <font>
+                                                <Font name="Times New Roman Bold" size="19.0" />
+                                            </font>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/course.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                        </Button>
+                                        <Button fx:id="NewExam" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#FormExam" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #6633ff; -fx-border-color: black;" text="Exam">
+                                            <font>
+                                                <Font name="Times New Roman Bold" size="19.0" />
+                                            </font>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/exam.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                        </Button>
+                                        <Button fx:id="buttonMsg" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#pageMsg" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #6633ff; -fx-border-color: black;" text="Message">
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/mssg.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                        </Button>
+                                        <Button fx:id="buttonCald" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#pageCld" prefHeight="48.0" prefWidth="186.0" style="-fx-border-color: black; -fx-background-color: #6633ff;" text="Calendar">
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="19.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/cald.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                                <AnchorPane fx:id="CoursePanel" layoutX="181.0" layoutY="34.0" prefHeight="458.0" prefWidth="610.0">
+                                    <children>
+                              <TableView fx:id="tableViewCours" layoutX="-1.0" layoutY="41.0" onMouseClicked="#getSelected" prefHeight="417.0" prefWidth="610.0">
+                                <columns>
+                                  <TableColumn fx:id="colCourseLibelle" prefWidth="113.66668701171875" text="course Libelle" />
+                                  <TableColumn fx:id="colCourseContent" prefWidth="254.3333740234375" text="Content" />
+                                    <TableColumn fx:id="colCourseDate" prefWidth="247.6666259765625" text="dateCreation" />
+                                </columns>
+                              </TableView>
+                              <HBox prefHeight="41.0" prefWidth="610.0" style="-fx-background-color: #e7dfed;">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="82.0" text="Course">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="ButtonCreatepopupCours" mnemonicParsing="false" onAction="#createpopupCours" prefHeight="27.0" prefWidth="141.0" style="-fx-background-color: #6633ff;" text="Add new Course">
+                                       <HBox.margin>
+                                          <Insets top="4.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#Delete" prefHeight="28.0" prefWidth="140.0" style="-fx-background-color: #6633ff;" text="Delete course">
+                                       <HBox.margin>
+                                          <Insets left="9.0" top="4.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane fx:id="ExamPanel" layoutX="181.0" layoutY="34.0" prefHeight="458.0" prefWidth="610.0" visible="false">
+                                    <children>
+                                        <TabPane prefHeight="458.0" prefWidth="610.0" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                                <Tab fx:id="qcm" text="Qcm">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                            <children>
+                                                <HBox prefHeight="41.0" prefWidth="610.0" style="-fx-background-color: #e7dfed;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="123.0" text="Exam Qcm">
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Button mnemonicParsing="false" onAction="#createpopupQcm" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #6633ff;" text="Add new Qcm">
+                                                         <HBox.margin>
+                                                            <Insets top="4.0" />
+                                                         </HBox.margin>
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="14.0" />
+                                                         </font>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView fx:id="tableViewQcm" layoutX="-3.0" layoutY="41.0" prefHeight="395.0" prefWidth="617.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="qcmQst" prefWidth="204.0" text="Question" />
+                                                      <TableColumn fx:id="qcmRepJuste" prefWidth="203.0" text="ReponseJuste" />
+                                                      <TableColumn fx:id="qcmRepFauss" prefWidth="211.0" text="ReponseFause" />
+                                                   </columns>
+                                                </TableView>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                                <Tab fx:id="Exam" text="Exam">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="41.0" prefWidth="610.0" style="-fx-background-color: #e7dfed;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="123.0" text="Exam Input">
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Button mnemonicParsing="false" onAction="#createpopupExam" prefHeight="27.0" prefWidth="127.0" style="-fx-background-color: #6633ff;" text="Add newExam">
+                                                         <HBox.margin>
+                                                            <Insets top="4.0" />
+                                                         </HBox.margin>
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="14.0" />
+                                                         </font>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView fx:id="tableViewExam" layoutX="-3.0" layoutY="41.0" prefHeight="395.0" prefWidth="617.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ExamQst" prefWidth="300.0" text="Question" />
+                                                      <TableColumn fx:id="ExamReponse" prefWidth="312.0" text="ReponseJuste" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                            </tabs>
+                                        </TabPane>
+                                    </children>
+                                </AnchorPane>
+                        <AnchorPane fx:id="CalendarPanel" layoutX="179.0" layoutY="34.0" prefHeight="458.0" prefWidth="610.0" visible="false">
+                           <children>
+                              <TabPane fx:id="tablviewCald" prefHeight="458.0" prefWidth="610.0" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab fx:id="dayEvent" text="DayEvent">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="tableViewDayEvent" layoutX="-4.0" layoutY="-3.0" prefHeight="436.0" prefWidth="617.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ColNameDayEvent" prefWidth="107.33331298828125" text="name" />
+                                                      <TableColumn fx:id="ColDescDayEvent" prefWidth="171.0" text="description" />
+                                                      <TableColumn fx:id="ColDateDayEvent" prefWidth="116.0" text="date" />
+                                                      <TableColumn fx:id="ColStartTimeDayEvent" prefWidth="109.0" text="startTime" />
+                                                      <TableColumn fx:id="ColEndTimeDayEvent" prefWidth="112.0" text="endTime" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="WeekEvent" text="WeekEvent">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="tableViewWeekEvent" layoutX="-4.0" layoutY="-3.0" prefHeight="436.0" prefWidth="617.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ColNameWeekEvent" prefWidth="107.33331298828125" text="name" />
+                                                      <TableColumn fx:id="ColDescWeekEvent" prefWidth="171.0" text="description" />
+                                                      <TableColumn fx:id="ColDateWeekEvent" prefWidth="116.0" text="date" />
+                                                      <TableColumn fx:id="ColStartTimeWeekEvent" prefWidth="109.0" text="startTime" />
+                                                      <TableColumn fx:id="ColEndTimeWeekEvent" prefWidth="112.0" text="endTime" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="MonthEvent">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="tableViewMonthEvent" layoutX="-3.0" layoutY="-3.0" prefHeight="436.0" prefWidth="616.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ColNameMonthEvent" prefWidth="107.33331298828125" text="name" />
+                                                      <TableColumn fx:id="ColDescMonthEvent" prefWidth="171.0" text="description" />
+                                                      <TableColumn fx:id="ColDateMonthEvent" prefWidth="116.0" text="date" />
+                                                      <TableColumn fx:id="ColStartTimeMonthEvent" prefWidth="109.0" text="startTime" />
+                                                      <TableColumn fx:id="ColEndTimeMonthEvent" prefWidth="111.0" text="endTime" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="agendaEvent" text="All Agenda">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TableView fx:id="tableViewAgendaEvent" layoutX="-3.0" layoutY="-3.0" prefHeight="436.0" prefWidth="617.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ColNameAgendaEvent" prefWidth="107.33331298828125" text="name" />
+                                                      <TableColumn fx:id="ColDescAgendaEvent" prefWidth="171.0" text="description" />
+                                                      <TableColumn fx:id="ColDateAgendaEvent" prefWidth="116.0" text="date" />
+                                                      <TableColumn fx:id="ColStartTimeAgendaEvent" prefWidth="109.0" text="startTime" />
+                                                      <TableColumn fx:id="ColEndTimeAgendaEvent" prefWidth="112.0" text="endTime" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="MessagePanel" layoutX="180.0" layoutY="34.0" prefHeight="458.0" prefWidth="610.0" visible="false">
+                           <children>
+                              <TabPane fx:id="tableviewMessg" layoutX="-6.0" prefHeight="458.0" prefWidth="616.0" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab text="Message">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox prefHeight="41.0" prefWidth="617.0" style="-fx-background-color: #e7dfed;">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="154.0" text="Message received ">
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Button mnemonicParsing="false" onAction="#createpopupMessageProf" prefHeight="27.0" prefWidth="145.0" style="-fx-background-color: #6633ff;" text="Send new Message">
+                                                         <HBox.margin>
+                                                            <Insets top="4.0" />
+                                                         </HBox.margin>
+                                                         <font>
+                                                            <Font name="Times New Roman Bold" size="14.0" />
+                                                         </font>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView fx:id="tableViewMessage" layoutX="-1.0" layoutY="36.0" prefHeight="395.0" prefWidth="616.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="colviewMessgSenderProf" prefWidth="163.33331298828125" text="name of the sender" />
+                                                      <TableColumn fx:id="colviewMessgContentProf" prefWidth="451.66668701171875" text="Content" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
